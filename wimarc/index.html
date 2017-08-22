@@ -16,9 +16,9 @@ var tempIoT1c,tempIoT2c,tempIoT3c,tempIoT4c,tempIoT5c,tempIoT6c,tempIoT7c,tempIo
 var tempIoT1d,tempIoT2d,tempIoT3d,tempIoT4d,tempIoT5d,tempIoT6d,tempIoT7d,tempIoT8d,tempIoT9d,tempIoT10d,tempIoT11d;
 
 
-  const APPKEY = 'aaaaaaaaaaaaaaaaaaa';
-	const APPSECRET ='bbbbbbbbbbbbbbbbbbbbbbbbbb';
-	const APPID = 'tmec';
+ const APPKEY = 'cccccccccccccccccccc';
+	const APPSECRET ='bbbbbbbbbbbbbbbbbbbbbbbbb';
+	const APPID = 'aaaa';
 var refmoisture=0;
 var sensitivity= -1;
 
@@ -62,15 +62,15 @@ var sensitivity= -1;
 	
 	temp=(res[1])/1;
 	
-	document.getElementById("sensor2").innerHTML= temp.toFixed(2);   
+	document.getElementById("sensor1").innerHTML= temp.toFixed(2);   
 	temp=(res[2])/1;
-	document.getElementById("sensor1").innerHTML= temp.toFixed(2);       
+	document.getElementById("sensor2").innerHTML= temp.toFixed(2);       
 	
 	temp=(res[3]/1) //RH= (1250*RHvoltage)/voltref-1250;
-	document.getElementById("sensor3").innerHTML= temp.toFixed(2);   
+	document.getElementById("sensor4").innerHTML= temp.toFixed(2);   
 	
-	temp =res[8]/1;
-	document.getElementById("sensor4").innerHTML= temp.toFixed(2);    
+	temp =res[5]/1;
+	document.getElementById("sensor7").innerHTML= temp.toFixed(2);    
 	 
 	
 	
@@ -801,7 +801,7 @@ div.desc3 {
    
    
 <div class="img3" >
-  <a target="_blank" href="https://nectecwimarcfarm.000webhostapp.com/wimarcdb/">
+  <a target="_blank" href="/wimarcdb/">
   <img src="recorddata.png" id="slide"   width="150px" height="150px">
      </a>
   
