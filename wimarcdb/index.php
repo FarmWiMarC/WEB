@@ -254,7 +254,7 @@ $("<div id='tooltip'></div>").css({
 					var x = item.datapoint[0].toFixed(2),
 						y = item.datapoint[1].toFixed(2);
 
-var a = new Date(item.datapoint[0]-(5*60*60*1000));
+var a = new Date(item.datapoint[0]-(12*60*60*1000));
  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
      var year = a.getFullYear();
      var month = months[a.getMonth()];

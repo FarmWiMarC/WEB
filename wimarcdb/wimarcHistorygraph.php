@@ -3,7 +3,7 @@
 
 <?php
 
- $conn = mysqli_connect("localhost","db user","password","db name");
+ $conn = mysqli_connect("localhost","user_wimarcfarm","password","db name");
  
  $t0=strtotime('today');
    
@@ -54,7 +54,7 @@ echo '
   </td>
   <td width="75"> 
 
- <BUTTON class="button botton1" name="" loadMoisturevalue="submit" type="submit" titleLux="Moisture"> 
+ <BUTTON class="button botton1" name="loadMoisture" value="submit" type="submit" titleLux="Moisture"> 
   <IMG src="/wimarcdb/pic/SoilMois.png"  width="75" height="75" alt="wow"></BUTTON>
   </td>
 
@@ -823,7 +823,21 @@ $date_end= date("Y-m-d",$timeEnd);
 
 $tablename = 'sensor'; 
  $legend1="Moisture Content 30cm";
-
+      $legend2="";
+$legend3="";
+$legend4="";
+$legend5="";
+$legend6="";
+$legend7="";
+$legend8="";
+$data1=null;
+$data2=null;
+  $data3=null;
+  $data4=null;
+  $data5=null;
+  $data6=null;
+  $data7=null;
+  $data8=null; 
  
      $t0=strtotime('today');
    
@@ -985,7 +999,7 @@ $date_end= date("Y-m-d",$timeEnd);
                                                 
                         // $row['E']=(4600-$row['E']*100)/38;
                                                          
-                        $data1[] = array(($row['time']),($row['Lux']));
+                        $data1[] = array(($row['time']),($row['Light']));
                      //  }
                    
 				   
