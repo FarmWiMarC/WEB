@@ -3,7 +3,7 @@
 
 <?php
 
- $conn = mysqli_connect("localhost","user_wimarcfarm","password","db name");
+ $conn = mysqli_connect("localhost","de_user","password","db_name");
  
  $t0=strtotime('today');
    
